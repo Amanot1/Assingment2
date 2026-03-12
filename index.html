@@ -2,50 +2,48 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
     <title>Penguin Fashion</title>
     <link rel="stylesheet" href="style.css">
-    <!-- font icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- google fonts -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;700&display=swap"
         rel="stylesheet">
 
-
-
-
     <style>
-
+       
     </style>
 
 </head>
 
 <body>
 
+    <!-- HEADER -->
 
-    <header class="bg-[#FFFBF0] relative">
+    <header class="bg-[#FFFBF0]">
 
-        <!-- Navbar -->
         <nav class="flex justify-between items-center container mx-auto px-4 py-4">
 
-            <img src="./assets/icons/logo.png" alt="" class="w-[160px] md:w-[220px]">
+            <img src="./assets/icons/logo.png" class="w-[160px] md:w-[220px]">
 
-            <!-- Menu list -->
             <ul class="hidden md:flex items-center gap-6 font-semibold">
-                <li>Home</li>
-                <li>Product</li>
-                <li>About us</li>
-                <li>Contact us</li>
+
+                <li class="hover:text-[#85A019] cursor-pointer">Home</li>
+                <li class="hover:text-[#85A019] cursor-pointer">Product</li>
+                <li class="hover:text-[#85A019] cursor-pointer">About us</li>
+                <li class="hover:text-[#85A019] cursor-pointer">Contact us</li>
+
             </ul>
 
-            <!-- Hamburger icon -->
             <span class="text-2xl md:hidden">
                 <i class="fa-solid fa-bars"></i>
             </span>
@@ -53,186 +51,324 @@
         </nav>
 
 
-        <!-- Hero Section -->
+
         <section class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-10 py-10">
 
-            <!-- Text -->
+
             <div class="text-center md:text-left">
 
-                <h1 class="font-[Bebas_Neue] text-[#FABE4C] text-[40px] md:text-[70px] leading-none">
+                <h1 class="text-[#FABE4C] text-[40px] md:text-[70px] leading-none">
                     BE THE PENGUINS
                 </h1>
 
-                <h1 class="font-[Bebas_Neue] text-[#363958] text-[40px] md:text-[70px] leading-none">
+                <h1 class="text-[#363958] text-[40px] md:text-[70px] leading-none">
                     OF WINTER
                 </h1>
 
                 <p class="text-gray-500 mt-4 max-w-[400px] mx-auto md:mx-0">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
+                    Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry.
                 </p>
 
                 <button
-                    class="mt-6 flex items-center gap-2 bg-[#85A019] hover:bg-[#6f8616] text-white px-6 py-3 rounded-lg shadow mx-auto md:mx-0">
+                    class="btn-modern mt-6 flex items-center gap-2 bg-[#85A019] hover:bg-[#6f8616] text-white px-6 py-3 rounded-lg shadow mx-auto md:mx-0">
+
                     <i class="fa-solid fa-cart-shopping"></i>
                     BUY NOW
+
                 </button>
 
             </div>
 
 
-            <!-- Image -->
             <div class="relative flex justify-center">
 
                 <img src="./assets/images/model.png" class="w-[260px] md:w-[420px] relative z-10">
 
-                <!-- circle background -->
-                <div
-                    class="absolute w-[200px] h-[200px] md:w-[320px] md:h-[320px] bg-[#A4BC46] rounded-full -z-0 top-8">
+                <div class="absolute w-[200px] h-[200px] md:w-[320px] md:h-[320px] bg-[#A4BC46] rounded-full top-8">
                 </div>
 
             </div>
+
 
         </section>
 
     </header>
 
 
+    <!-- WOMEN JACKET -->
 
-    <!-- women section -->
-    <section class="container mx-auto my-[70px]">
-        <h2 class="text-[48px] ">WOMEN JACKET</h2>
+    <section class="container mx-auto my-[70px] px-4">
+
+        <h2 class="text-[48px] mb-10">WOMEN JACKET</h2>
+
         <div class="grid grid-cols-1 md:grid-cols-3 gap-[25px]">
-            <div class="shadow p-4 rounded-md ">
-                <img src="./assets/images/jacket-1.png" alt="" class="w-full h-[293px] bg-[#f1f1f1] 
-                rounded-[20px] py-3 px-2">
-                <h4 class="text-[19px] font-bold">Yellow Coat Jacket</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adip fjgbt vhfgt fjvchrf .</p>
-                <div class="flex items-center justify-between gap-4">
-                    <h4 class="text-[#FABE4C] text-[25px] lg:text-[35px] font-bold">$234</h4>
-                    <button class="button-linear-gradient rounded-[10px] w-[170px] 
-                                    h-[60px] inline-block font-semibold text-white mt-3.5">
+
+
+            <!-- CARD -->
+
+            <div class="card-hover shadow p-4 rounded-md bg-white flex flex-col h-full">
+
+                <div class="img-hover bg-[#f1f1f1] p-4">
+
+                    <img src="./assets/images/jacket-1.png" class="w-full h-[293px] object-contain">
+
+                </div>
+
+                <h4 class="text-[19px] font-bold mt-4 min-h-[50px]">
+                    Yellow Coat Jacket
+                </h4>
+
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+                <div class="flex items-center justify-between mt-auto">
+
+                    <h4 class="text-[#FABE4C] text-[25px] font-bold">$234</h4>
+
+                    <button
+                        class="btn-modern bg-[#85A019] text-white px-4 py-2 rounded-lg flex items-center gap-2 whitespace-nowrap">
+
                         <i class="fa-solid fa-cart-arrow-down"></i>
-                        BUY NOW</button>
+                        BUY NOW
+
+                    </button>
+
                 </div>
 
             </div>
-            <div class="shadow p-4 rounded-md">
-                <img src="./assets/images/jacket-2.png" alt="" class="w-full h-[293px] bg-[#f1f1f1] 
-                                    rounded-[20px] py-3 px-2">
-                <h4 class="text-[19px] font-bold">Ladies Jacket</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adip fjgbt vhfgt fjvchrf .</p>
-                <div class="flex items-center justify-between gap-4">
-                    <h4 class="text-[#FABE4C] text-[25px] lg:text-[35px] font-bold">$234</h4>
-                    <button class="button-linear-gradient rounded-[10px] w-[170px] 
-                                                        h-[60px] inline-block font-semibold text-white mt-3.5">
+
+
+
+            <div class="card-hover shadow p-4 rounded-md bg-white flex flex-col h-full">
+
+                <div class="img-hover bg-[#f1f1f1] p-4">
+
+                    <img src="./assets/images/jacket-2.png" class="w-full h-[293px] object-contain">
+
+                </div>
+
+                <h4 class="text-[19px] font-bold mt-4 min-h-[50px]">
+                    Ladies Jacket
+                </h4>
+
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+                <div class="flex items-center justify-between mt-auto">
+
+                    <h4 class="text-[#FABE4C] text-[25px] font-bold">$234</h4>
+
+                    <button
+                        class="btn-modern bg-[#85A019] text-white px-4 py-2 rounded-lg flex items-center gap-2 whitespace-nowrap">
+
                         <i class="fa-solid fa-cart-arrow-down"></i>
-                        BUY NOW</button>
+                        BUY NOW
+
+                    </button>
+
                 </div>
 
             </div>
-            <div class="shadow p-4 rounded-md">
-                <img src="./assets/images/jacket-3.png" alt="" class="w-full h-[293px] bg-[#f1f1f1] 
-                                    rounded-[20px] py-3 px-2">
-                <h4 class="text-[19px] font-bold">Women Leather Jacket</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adip fjgbt vhfgt fjvchrf .</p>
-                <div class="flex items-center justify-between gap-4">
-                    <h4 class="text-[#FABE4C] text-[25px] lg:text-[35px] font-bold">$234</h4>
-                    <button class="button-linear-gradient rounded-[10px] w-[170px] 
-                                                        h-[60px] inline-block font-semibold text-white mt-3.5">
+
+
+
+            <div class="card-hover shadow p-4 rounded-md bg-white flex flex-col h-full">
+
+                <div class="img-hover bg-[#f1f1f1] p-4">
+
+                    <img src="./assets/images/jacket-3.png" class="w-full h-[293px] object-contain">
+
+                </div>
+
+                <h4 class="text-[19px] font-bold mt-4 min-h-[50px]">
+                    Women Leather Jacket
+                </h4>
+
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+                <div class="flex items-center justify-between mt-auto">
+
+                    <h4 class="text-[#FABE4C] text-[25px] font-bold">$234</h4>
+
+                    <button
+                        class="btn-modern bg-[#85A019] text-white px-4 py-2 rounded-lg flex items-center gap-2 whitespace-nowrap">
+
                         <i class="fa-solid fa-cart-arrow-down"></i>
-                        BUY NOW</button>
+                        BUY NOW
+
+                    </button>
+
                 </div>
 
             </div>
+
+
         </div>
-
 
     </section>
 
-    <!-- mAn section -->
-    <section class="container mx-auto my-[70px]">
-        <h2 class="text-[48px] ">MAN JACKET</h2>
+
+    <!-- MAN JACKET -->
+
+    <section class="container mx-auto my-[70px] px-4">
+
+        <h2 class="text-[48px] mb-10">MAN JACKET</h2>
+
         <div class="grid grid-cols-1 md:grid-cols-3 gap-[25px]">
-            <div class="shadow p-4 rounded-md ">
-                <img src="./assets/images/jacket-4.png" alt="" class="w-full h-[293px] bg-[#f1f1f1] 
-                        rounded-[20px] py-3 px-2">
-                <h4 class="lg:text-[19px] text-[18px] font-bold">Snowboard Jacket Mens</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adip fjgbt vhfgt fjvchrf .</p>
-                <div class="flex items-center justify-between gap-4">
-                    <h4 class="text-[#FABE4C] text-[25px] lg:text-[35px] font-bold">$234</h4>
-                    <button class="button-linear-gradient rounded-[10px] w-[170px] 
-                                            h-[60px] inline-block font-semibold text-white mt-3.5">
+
+
+            <div class="card-hover shadow p-4 rounded-md bg-white flex flex-col h-full">
+
+                <div class="img-hover bg-[#f1f1f1] p-4">
+
+                    <img src="./assets/images/jacket-4.png" class="w-full h-[293px] object-contain">
+
+                </div>
+
+                <h4 class="text-[19px] font-bold mt-4 min-h-[50px]">
+                    Snowboard Jacket Mens
+                </h4>
+
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+                <div class="flex items-center justify-between mt-auto">
+
+                    <h4 class="text-[#FABE4C] text-[25px] font-bold">$234</h4>
+
+                    <button
+                        class="btn-modern bg-[#85A019] text-white px-4 py-2 rounded-lg flex items-center gap-2 whitespace-nowrap">
+
                         <i class="fa-solid fa-cart-arrow-down"></i>
-                        BUY NOW</button>
+                        BUY NOW
+
+                    </button>
+
                 </div>
 
             </div>
-            <div class="shadow p-4 rounded-md">
-                <img src="./assets/images/jacket-5.png" alt="" class="w-full h-[293px] bg-[#f1f1f1] 
-                                            rounded-[20px] py-3 px-2">
-                <h4 class="text-[19px] font-bold">Man Leather Jackets</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adip fjgbt vhfgt fjvchrf .</p>
-                <div class="flex items-center justify-between gap-4">
-                    <h4 class="text-[#FABE4C] text-[25px] lg:text-[35px] font-bold">$234</h4>
-                    <button class="button-linear-gradient rounded-[10px] w-[170px] 
-                                                                h-[60px] inline-block font-semibold text-white mt-3.5">
+
+
+            <div class="card-hover shadow p-4 rounded-md bg-white flex flex-col h-full">
+
+                <div class="img-hover bg-[#f1f1f1] p-4">
+
+                    <img src="./assets/images/jacket-5.png" class="w-full h-[293px] object-contain">
+
+                </div>
+
+                <h4 class="text-[19px] font-bold mt-4 min-h-[50px]">
+                    Man Leather Jackets
+                </h4>
+
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+                <div class="flex items-center justify-between mt-auto">
+
+                    <h4 class="text-[#FABE4C] text-[25px] font-bold">$234</h4>
+
+                    <button
+                        class="btn-modern bg-[#85A019] text-white px-4 py-2 rounded-lg flex items-center gap-2 whitespace-nowrap">
+
                         <i class="fa-solid fa-cart-arrow-down"></i>
-                        BUY NOW</button>
+                        BUY NOW
+
+                    </button>
+
                 </div>
 
             </div>
-            <div class="shadow p-4 rounded-md">
-                <img src="./assets/images/jacket-6.png" alt="" class="w-full h-[293px] bg-[#f1f1f1] 
-                                            rounded-[20px] py-3 px-2">
-                <h4 class="text-[19px] font-bold">Man Casual Jackets</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adip fjgbt vhfgt fjvchrf .</p>
-                <div class="flex items-center justify-between gap-4">
-                    <h4 class="text-[#FABE4C] text-[25px] lg:text-[35px] font-bold">$234</h4>
-                    <button class="button-linear-gradient rounded-[10px] w-[170px] 
-                                                                h-[60px] inline-block font-semibold text-white mt-3.5">
+
+
+            <div class="card-hover shadow p-4 rounded-md bg-white flex flex-col h-full">
+
+                <div class="img-hover bg-[#f1f1f1] p-4">
+
+                    <img src="./assets/images/jacket-6.png" class="w-full h-[293px] object-contain">
+
+                </div>
+
+                <h4 class="text-[19px] font-bold mt-4 min-h-[50px]">
+                    Man Casual Jackets
+                </h4>
+
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+                <div class="flex items-center justify-between mt-auto">
+
+                    <h4 class="text-[#FABE4C] text-[25px] font-bold">$234</h4>
+
+                    <button
+                        class="btn-modern bg-[#85A019] text-white px-4 py-2 rounded-lg flex items-center gap-2 whitespace-nowrap">
+
                         <i class="fa-solid fa-cart-arrow-down"></i>
-                        BUY NOW</button>
+                        BUY NOW
+
+                    </button>
+
                 </div>
 
             </div>
+
+
         </div>
-
 
     </section>
-    <!-- faciliti -->
-    <section class="grid grid-cols-1 md:grid-cols-2 items-center justify-between gap-4 container mx-auto">
-        <div class="space-y-5 order-2">
-            <div class="flex items-center gap-3 shadow rounded-md p-2 ">
-                <img src="./assets/icons/house.png" alt="" class="w-[78px]">
+
+
+
+    <!-- FACILITY -->
+
+    <section class="grid grid-cols-1 md:grid-cols-2 items-center gap-10 container mx-auto px-4 my-[70px]">
+
+        <div class="space-y-6">
+
+            <div class="card-hover flex items-center gap-3 shadow rounded-md p-4 bg-white">
+
+                <img src="./assets/icons/house.png" class="w-[60px]">
+
                 <div>
-                    <h4 class="text-[24px] font-bold">Find the Perfect Fit</h4>
-                    <p>Everybody is different, which is why we
-                        offer styles for every body.</p>
+
+                    <h4 class="text-[20px] font-bold">Find the Perfect Fit</h4>
+
+                    <p>Everybody is different, which is why we offer styles for every body.</p>
+
                 </div>
 
             </div>
-            <div class="flex items-center gap-3 shadow rounded-md p-2 ">
-                <img src="./assets/icons/box.png" alt="" class="w-[78px]">
+
+
+            <div class="card-hover flex items-center gap-3 shadow rounded-md p-4 bg-white">
+
+                <img src="./assets/icons/box.png" class="w-[60px]">
+
                 <div>
-                    <h4 class="text-[24px] font-bold">Free Exchanges</h4>
-                    <p>One of the many reasons you can shop
-                        with peace of mind.</p>
+
+                    <h4 class="text-[20px] font-bold">Free Exchanges</h4>
+
+                    <p>One of the many reasons you can shop with peace of mind.</p>
+
                 </div>
 
             </div>
-            <div class="flex items-center gap-3 shadow rounded-md p-2 ">
-                <img src="./assets/icons/question.png" alt="" class="w-[78px]">
+
+
+            <div class="card-hover flex items-center gap-3 shadow rounded-md p-4 bg-white">
+
+                <img src="./assets/icons/question.png" class="w-[60px]">
+
                 <div>
-                    <h4 class="text-[24px] font-bold">Contact Our Seller</h4>
-                    <p>They are here to help you. That's quite
-                        literally what we pay them for.</p>
+
+                    <h4 class="text-[20px] font-bold">Contact Our Seller</h4>
+
+                    <p>They are here to help you.</p>
+
                 </div>
 
             </div>
 
         </div>
-        <img src="./assets/images/shopping.png" alt="" class="order-1 md:order-3">
+
+
+        <img src="./assets/images/shopping.png">
 
     </section>
 
